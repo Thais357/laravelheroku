@@ -20,5 +20,6 @@ Route::get('/', function () {
 Route::get('/status', function () {
     return view('components/sttus');
 });
+
 Route::post('/payment',[\App\Http\Controllers\PaymentController::class, 'payment']);
 
